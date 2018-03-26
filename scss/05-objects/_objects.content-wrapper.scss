@@ -1,26 +1,28 @@
-$container-mobile:  320px;
-$container-tablet:  740px;
-$container-desktop: 980px;
-$container-wide:    1300px;
+$container-width-mobile:  320px;
+$container-width-tablet:  740px;
+$container-width-desktop: 980px;
+$container-width-wide:    1300px;
+
+$content-wrapper-spacing: $inuit-global-spacing-unit/2 !default;
 
 .o-content-wrapper {
   margin-left: auto;
   margin-right:auto;
-  padding-left: $inuit-global-spacing-unit;
-  padding-right: $inuit-global-spacing-unit;
+  padding-left: $content-wrapper-spacing;
+  padding-right: $content-wrapper-spacing;
   
   @include mq($from: mobile) {
-    width: $container-mobile;
+    width: $container-width-mobile;
   }
   
   // Apply styling up to devices smaller than tablets (exclude tablets)
   @include mq($from: tablet) {
-    width: $container-tablet;
+    width: $container-width-tablet;
   }
   
     // Apply styling to tablets up to desktop (exclude desktop)
   @include mq($from: desktop) {
-    width: $container-desktop;
+    width: $container-width-desktop;
   }
 
 }
