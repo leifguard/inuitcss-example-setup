@@ -1,0 +1,26 @@
+$container-mobile:  320px;
+$container-tablet:  740px;
+$container-desktop: 980px;
+$container-wide:    1300px;
+
+.o-content-wrapper {
+  margin-left: auto;
+  margin-right:auto;
+  padding-left: $inuit-global-spacing-unit;
+  padding-right: $inuit-global-spacing-unit;
+  
+  @include mq($from: mobile) {
+    width: $container-mobile;
+  }
+  
+  // Apply styling up to devices smaller than tablets (exclude tablets)
+  @include mq($from: tablet) {
+    width: $container-tablet;
+  }
+  
+    // Apply styling to tablets up to desktop (exclude desktop)
+  @include mq($from: desktop) {
+    width: $container-desktop;
+  }
+
+}

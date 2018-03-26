@@ -1443,6 +1443,21 @@ table {
   .o-pack--reverse > .o-pack__item {
     direction: ltr; }
 
+.o-content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px; }
+  @media (min-width: 20em) {
+    .o-content-wrapper {
+      width: 320px; } }
+  @media (min-width: 46.25em) {
+    .o-content-wrapper {
+      width: 740px; } }
+  @media (min-width: 61.25em) {
+    .o-content-wrapper {
+      width: 980px; } }
+
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
