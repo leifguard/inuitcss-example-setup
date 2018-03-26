@@ -1,0 +1,10 @@
+{
+  "name": "frontend-test",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  },
+  "devDependencies": {
+    "inuitcss": "^6.0.0"
+  }
+}
